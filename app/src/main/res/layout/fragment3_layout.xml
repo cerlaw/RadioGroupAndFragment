@@ -5,9 +5,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <WebView
-        android:id="@+id/myWebView"
+    <Button
+        android:id="@+id/webViewBeforeOptimize"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:text="加载网页（直接打开网页）"/>
+
+    <Button
+        android:id="@+id/webViewAfterOptimize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载网页（有本地资源）"/>
 
 </LinearLayout>
