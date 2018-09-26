@@ -17,6 +17,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //提前加载webView，提高打开速度
         mWebView = new WebView(this);
         mWebView.setWebViewClient(new WebViewClient() {
             @Override

@@ -45,13 +45,16 @@ public class MainActivity extends AppCompatActivity{
     private Fragment mFragment;
     private FragmentManager fm;
     private SparseArray<Fragment> fragments;
-    //左滑为true，右滑为false
+    /**左滑为true，右滑为false*/
     private boolean direction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //设置后将不会绘制主体背景图，只适用于背景被覆盖时使用
+//        getWindow().setBackgroundDrawable(null);
         ButterKnife.bind(this);
 
         fragments = new SparseArray<Fragment>(4);
